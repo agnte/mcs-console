@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "prebuild": "npm i",
     "build": "tsc --build --verbose",
     "prestart": "npm run build",
     "start": "node --env-file .env ./dist/index.js",
